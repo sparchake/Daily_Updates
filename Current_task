@@ -1,0 +1,15 @@
+Task Statement: Create a new portal and one public registeration page
+                Create two new fields - Vendor name and Vendor email o incident
+                Once Incident is resolved then it will create a new user with that vendor name and vendor email.
+                That user (Vendor) will get two mails one with link to register on a public form and second registration code.
+                Once he registered, he will get a user name and password to login to the new portal.
+
+Description:  Created new Service Portal has been created, consisting of a page and a widget, and these 
+              components have been seamlessly integrated within a single portal.
+              In incident form created two fields that is "Vendor Name" & "Vendor Email". and condition is that Once Incident is resolved then it will create a new user with that vendor name and vendor email.
+              In this email notification script, a message will be sent to the vendor, containing two  pieces of information: a link to access a public registration form and a unique registration code
+              In this statement, a unique registration code has been implemented for newly created users.
+
+Progress: In Progress.
+              
+              
