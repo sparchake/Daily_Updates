@@ -1,0 +1,49 @@
+Lerant concept as Client Script.
+What is client script?
+Client-side scripts execute within a user's browser and are used to manage forms and form fields. 
+API used in client script: g_form, g_user.
+Examples of things client-side scripts can do include:
+Place the cursor in a form field on form load
+Generate alerts, confirmations, and messages
+Populate a form field in response to another field's value
+Highlight a form field
+Validate form data
+Modify choice list options
+Hide/Show fields or sections.
+Types of client script:
+Onload(): Script will runs when the system first renders the form and before users can enter data.
+               Used when something needs to be changed on the form while it is loading.
+               onLoad() function will be automatically populated in the script field when onload() type is selected on the form.
+               Typically, onLoad()client scripts perform client-side-manipulation of the current form or set default record values.
+               function: onLoad(){
+               
+               }
+onChange():Script will runs when a particular field value changes on the form.
+            Used to perform some operation as per the field changed
+            onChange() function will be automatically populated in the script field when onChange  type is selected on the form.
+            The onChange()client script must specify these parameters.
+            control: the DHTML widget whose value changed
+            function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+            if (isLoading || newValue === '') {
+            return;
+            }
+            }
+
+onCellEdit():Script will runs when a field value changes on a list.
+             The onCellEdit() client script must specify these parameters.
+             sysIDs: hold all the value of the sys_ids for all items being edited.
+             table: the table of the items being edited.
+             oldValues: the old values of the cells being edited.
+             newValue: the new value for the cells being edited.
+             callback: a callback that continues the execution of any other related cell edit scripts. If true is passed as a parameter, the other scripts are executed or the change is committed if there are no more scripts. If false is passed as a parameter, any further scripts are not executed and the change is not committed.
+             function onCellEdit(sysIDs, table, oldValues, newValue, callback) {
+             var saveAndClose = true;
+             callback(saveAndClose);
+             }
+
+onSubmit():Script will runs when a form is submitted or saved.
+           onSubmit() function will be automatically populated in the script field when onSubmit type is selected on the form
+           Typically, onSubmit() scripts validate things on the form and ensure that the submission makes sense. An onSubmit() client script can cancel form submission by returning a value of false.
+           function onSubmit() {
+           
+           }
