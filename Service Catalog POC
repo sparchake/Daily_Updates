@@ -1,0 +1,22 @@
+POC Statement: 
+Catalog Item name: Group Members Manager
+Item Description: By this catalog item we can add you any particular or we can remove from paricular group<kb>
+Short description: Servicenow group manager manages servicenow group members.
+Image
+Catalog: Service catalog
+Category: Office
+Visibility: ITIL User
+
+Varibles used:
+Request BY(Reference)- Current logged in user & Read only
+Request For(Reference)- Active user select the requested for whome you are requesting
+Manager(Reference)-  Autopopulate by Requests for
+Country(Single line text)- Autopopulate by Requests for
+Action(Select box)- Manadatory and in this sub-choice is ADD/REMOVE
+Add Group Name(Reference) -Manadatory on ADD
+Remove Group Name(List) - user currently memners
+Reasons(Select box)- It will manadtiry for new members by selecting new member it might be delay
+Brief Description(Multi line text)- Only mandatory if select other
+
+
+              
