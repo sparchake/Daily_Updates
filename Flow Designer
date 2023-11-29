@@ -1,0 +1,46 @@
+What is flow designer?
+Flow Designer is a Now Platform® feature that enables process owners to automate work. Build multi-step flows from reusable components without having to code.
+Flow Designer is the default Now Platform process automation builder used to create flows. Flow Designer replaces the legacy Workflow graphical editor.
+
+Benefits of flow designer:
+->Automating in single platform.
+->Natural language process
+->Reusability
+->Reduce syntax error issues.
+->Reduce upgrade cost and maintainance.
+->Easy feature of integration.
+
+Components of flow designer:
+1.flows:
+flows are similar to workflow in servicenow.
+flow is an automated process which has sequence of actions and a trigger. it automate business logic for a particular applications or process.
+
+2.Sub-flow:
+sub-flow is an automated process which has sequence of actions however it takes data input that allow the processs to be started from a flow.
+
+3.Actions:
+Action is a reusable operationthat enable to automate different feature in servicenow platform writing a case.
+
+Types of flow designer trigger in servicenow:
+1.Record based: Record get created or updated in the table.
+2.Date / Schedule based: Example: Daily, Weekly, Monthly, etc.
+3.Application-based: Example: SLA task, Inbound email, etc.
+
+Flow Designer vs Workflow:
+
+If you are creating something new, start with flow designer. However, there are a few cases you will need to use Workflow, as follows:
+
+Instance is running on a release earlier than Kingston.
+If the process requires complicated or scripted logic, it can be written in a Workflow and called from a flow.
+Changing logic already developed using Workflows.
+SLA timer is required.
+Steps required do not exist yet in Flow Designer and require unsupported protocols.
+ 
+
+Use Flow Designer when:
+
+Instance is running Kingston release or later.
+Process owners need to use natural language and low code way to automate approvals, task, notifications and record operations.
+New logic needs to be developed and it has not been created in workflow.
+Business logic needs to use the library of reusable actions across multiple flows. 
+
